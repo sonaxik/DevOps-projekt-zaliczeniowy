@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="DevOps-projekt-zaliczeniowy.csproj" />
+	<Project Path="DevOps-projekt-zaliczeniowy.Tests\DevOps-projekt-zaliczeniowy.Tests.csproj"/>
 </Solution>

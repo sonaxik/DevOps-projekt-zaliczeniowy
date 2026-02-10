@@ -1,12 +1,15 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using DevOps_projekt_zaliczeniowy;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<TicketService>();
 
 var app = builder.Build();
 
@@ -30,9 +33,9 @@ var tickets = new List<Ticket>
     new Ticket(4, "Kino: Diuna 3", "2025-07-20", 35.00m)
 };
 
-app.MapGet("/products", () => tickets)
+app.MapGet("/products", (TicketService service) => service.GetTickets())
    .WithName("GetTickets")
    .WithOpenApi();
 
 app.Run();
-record Ticket(int Id, string Name, string Date, decimal Price);
+public record Ticket(int Id, string Name, string Date, decimal Price);
