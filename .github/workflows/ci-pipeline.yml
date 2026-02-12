@@ -25,4 +25,4 @@ jobs:
       run: dotnet build DevOps-projekt-zaliczeniowy.csproj --no-restore --configuration Release
 
     - name: Test
-      run: dotnet test DevOps-projekt-zaliczeniowy.Tests.csproj --no-build --configuration Release --verbosity normal
+      run: dotnet test DevOps-projekt-zaliczeniowy.Tests/DevOps-projekt-zaliczeniowy.Tests.csproj --no-build --configuration Release --verbosity normal
