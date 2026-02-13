@@ -1,5 +1,5 @@
 using Xunit;
-using DevOps_projekt_zaliczeniowy; // To musi pasowaæ do namespace w Program.cs
+using DevOps_projekt_zaliczeniowy;
 using System.Linq;
 
 namespace DevOps_projekt_zaliczeniowy.Tests
