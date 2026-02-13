@@ -49,6 +49,7 @@ Aby uruchomiæ projekt na swoim komputerze, wykonaj poni¿sze kroki w terminalu:
 Aby uruchomiæ testy jednostkowe:
 ```bash
 dotnet test
+```
 
 ## Uruchomienie zdalne
 
