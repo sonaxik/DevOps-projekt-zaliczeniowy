@@ -6,7 +6,7 @@ on:
     types:
       - completed
     branches:
-      - main
+      - ["main", "master"]
 
 jobs:
   deploy-to-azure:
